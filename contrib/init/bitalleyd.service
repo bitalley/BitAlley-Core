@@ -1,0 +1,26 @@
+[Unit]
+Description=BAC's distributed currency daemon
+After=network.target
+
+[Service]
+User=bitalley
+Group=bitalley
+
+Type=forking
+PIDFile=/var/lib/bitalleyd/bitalleyd.pid
+
+ExecStart=/usr/bin/bitalleyd -daemon -pid=/var/lib/bitalleyd/bitalleyd.pid \
+          -conf=/etc/bitalley/bitalley.conf -datadir=/var/lib/bitalleyd
+
+ExecStop=-/usr/bin/bitalley-cli -conf=/etc/bitalley/bitalley.conf \
+         -datadir=/var/lib/bitalleyd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,26 @@
+# /etc/conf.d/bitalleyd: config file for /etc/init.d/bitalleyd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/bitalley/bitalley.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/bitalleyd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bitalleyd.pid"
+
+# Where to write bitalleyd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/bitalleyd"
+
+# User and group to own bitalleyd process
+#BITCOIND_USER="bitalley"
+#BITCOIND_GROUP="bitalley"
+
+# Path to bitalleyd executable
+#BITCOIND_BIN="/usr/bin/bitalleyd"
+
+# Nice value to run bitalleyd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

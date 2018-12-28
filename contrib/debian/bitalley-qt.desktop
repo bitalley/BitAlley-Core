@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BAC
+Comment=BAC P2P Cryptocurrency
+Comment[fr]=BAC, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BAC, eşten eşe kriptografik sanal para birimi
+Exec=bitalley-qt %u
+Terminal=false
+Type=Application
+Icon=bitalley128
+MimeType=x-scheme-handler/bitalley;
+Categories=Office;Finance;

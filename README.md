@@ -1,7 +1,7 @@
 BITALLEY Core integration/staging tree
 ===================================
 
-https://www.BAC.io
+https://bitalley.io/
 
 What is BAC?
 --------------
@@ -13,7 +13,7 @@ out collectively by the network. BITALLEY Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the BITALLEY Core software, see https://www.BAC.io/.
+the BITALLEY Core software, see https://bitalley.io/
 
 License
 -------
@@ -37,7 +37,7 @@ match the project's coding conventions (see [doc/coding.md](doc/coding.md)) or a
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/BAC-Project/BAC/tags) are created
+completely stable. [Tags](https://github.com/bitalley/BitAlley-Core/tags) are created
 regularly to indicate new official, stable release versions of BAC.
 
 Testing

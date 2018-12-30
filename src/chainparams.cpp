@@ -55,9 +55,9 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("000007f6af1bb16686d12e43ae9a94f0c036be7d813721c6c643eaac3de7fd12"))
-    (50, uint256("000000ca6121248d81688c533c1d19690808157a9a7dd8af6e56313819fd8298"))
-    // (616764, uint256("29dd0bd1c59484f290896687b4ffb6a49afa5c498caf61967c69a541f8191557")) //first block to use modifierV2
-    // (623933, uint256("c7aafa648a0f1450157dc93bd4d7448913a85b7448f803b4ab970d91fc2a7da7"))
+    (50, uint256("00000251b3e74d26d29265f7fff95a89054912fe1e7503ee6fa616286d5139cc"))
+    (1675, uint256("adff11c24956470fd725d467d02ed80a4874b23047a5f79dc426122a14d000e5")) //first block to use modifierV2
+    // (100000, uint256("427c0f0e4efef5f65e8d91cae92d104315a95255a1086aeb24eb4c5b38184302"))
     // (791150, uint256("8e76f462e4e82d1bd21cb72e1ce1567d4ddda2390f26074ffd1f5d9c270e5e50"))
     // (795000, uint256("4423cceeb9fd574137a18733416275a70fdf95283cc79ad976ca399aa424a443"))
     // (863787, uint256("5b2482eca24caf2a46bb22e0545db7b7037282733faa3a42ec20542509999a64"))
@@ -146,17 +146,17 @@ public:
         strDevpubkey = "028b4f493822fe835ec6d68396a87835f9f77723c13a2e2a3af386d3afe5fa758d";
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 170;
+        nLastPOWBlock = 1000;
         nModifierUpdateBlock = 1999999999;
-        nZerocoinStartHeight = 180;
-        nZerocoinStartTime = 1536253000; // October 17, 2017 4:30:00 AM
+        nZerocoinStartHeight = 5000;
+        nZerocoinStartTime = 1546350000; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 1999999999; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 1999999999; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 1999999999; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 1999999999; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 1999999999; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 268200*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 190; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nBlockZerocoinV2 = 25000; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nEnforceNewSporkKey = 1999999999; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1999999999; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
